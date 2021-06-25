@@ -97,7 +97,9 @@ body{
 .leftCol h2{
     text-align: center;
 }
-
+.leftColContent{
+    margin-top: 15%;
+}
 .leftColContent p{
     font-size: 20px;
     color: #7e0909;
@@ -167,6 +169,7 @@ body{
     #nav #parentUL #myLinks{
         display: none;
     }
+    
     #nav #parentUL li{
         display: list-item;
     }
@@ -188,11 +191,18 @@ body{
         color: black;
       }
 
-    .leftCol h2{
+    .topMain{
+        display: block;
+    }
+
+     .leftCol h2{
        font-size: large;
     }
+    .leftColContent{
+        margin-top: 7%;
+    }
     .leftColContent p{
-        font-size: large;
+        font-size: 20px;
         color: #7e0909;
     }
     
