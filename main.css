@@ -71,6 +71,10 @@ body{
     box-shadow: none;
 }
 
+/* #nav ul li a.icon {
+    display: none;
+} */
+
 #main {
     background-color: #ffffff;
     color: #636363;
@@ -93,8 +97,10 @@ body{
 .leftCol h2{
     text-align: center;
 }
-.leftCol p{
-    font-size: 20;
+
+.leftColContent p{
+    font-size: 20px;
+    color: #7e0909;
 }
 
 .rightColImg {
@@ -142,4 +148,53 @@ body{
 #footer ul li {
     display: inline-block;
     padding: 1em;
+}
+
+@media screen and (max-width: 680px) {
+    #nav{
+        overflow: hidden;
+        background-color: #f7f7f7;
+        position: relative;
+    }
+    /* .active{
+        color: black;
+        padding: 0;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        background: none;
+    } */
+    #nav #parentUL #myLinks{
+        display: none;
+    }
+    #nav #parentUL li{
+        display: list-item;
+    }
+    #nav #parentUL #myLinks li{
+        display: list-item;
+    }
+    #nav #parentUL #myLinks li a {
+        color: black;
+        padding: 5px 5px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+
+    .icon {
+        display: block;
+        /*position: absolute;
+        text-decoration: none;*/
+        color: black;
+      }
+
+    .leftCol h2{
+       font-size: small;
+    }
+    .leftColContent p{
+        font-size: 5px;
+        color: #7e0909;
+    }
+    
+
 }

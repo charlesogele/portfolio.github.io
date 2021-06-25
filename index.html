@@ -1,8 +1,9 @@
 <!doctype html>
 <html>
     <head>
-        <title>Charles's Portfolio</title>
         <link rel="stylesheet" href="main.css">
+        <title>Charles's Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
 
@@ -16,20 +17,36 @@
             </header>
 
             <nav id="nav">
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="parentUL">
+                <li><a href="#" class="active">Home</a></li>
+                <li>
+                <ul id="myLinks">
+                    <li><a href="#" >Projects</a></li>
+                    <li><a href="#" >Gallery</a></li>
+                    <li><a href="#" >Contact</a></li>
+                </ul>
+                </li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"> &#9776;</a></li>
                 </ul>
             </nav>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                      x.style.display = "none";
+                    } else {
+                      x.style.display = "block";
+                    }
+                  }
+            </script>
 
             <div id="main">
                 <div class="topMain">
                     <div class="leftCol">
-                        <div style="margin-top: 15%;">
+                        <div class="leftColContent" style="margin-top: 15%;">
                         <h2 >Who I am?</h2>
-                        <p>I am an enthusistic young person with very strong experience in software development and hardware installation.</p> 
+                        <p >I am an enthusiastic young person with very strong experience in software development and hardware installation.</p> 
                         <p>I like dealing with Logical challenges, so I enjoy solving puzzles and some mathematical calculations.</p>
                         <p>My design skills need some improvement, but i am quite good at writing backend code. </p>
                         <p> I have the privilege to be educated up to Masters Level, with an M.Sc in Computer Security and Forensics.</p>   
