@@ -92,6 +92,8 @@ body{
 }
 .leftCol h2{
     text-align: center;
+}
+.leftCol p{
     font-size: 12px;
 }
 
