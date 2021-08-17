@@ -30,7 +30,7 @@ body{
 
 .titleStyle{
     color:rgb(255, 255, 255);
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 100;
     font-family: 'Freestyle Script';
     margin: auto;
@@ -47,6 +47,7 @@ body{
     border-top-right-radius: 10px;
     cursor: default;
     text-align: center;
+    position: relative;
 }
 
 #nav ul {
@@ -137,6 +138,7 @@ body{
 }
 
 #footer{
+    color:navy;
     margin: auto;
     width: 75%;
 }
@@ -150,6 +152,15 @@ body{
 #footer ul li {
     display: inline-block;
     padding: 1em;
+}
+
+#footer ul li a{
+    color: navy;
+    text-decoration: none;
+}
+
+#footer ul li a:hover{
+    color: white;
 }
 
 @media screen and (max-width: 680px) {
@@ -206,5 +217,11 @@ body{
         color: #7e0909;
     }
     
+    .rightColImg {
+        border-radius: 50px;
+        /*height:250px;*/
+        width: 50%;
+        box-shadow: 2px 2px skyblue;
+    }
 
 }
