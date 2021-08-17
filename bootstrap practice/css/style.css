@@ -12,6 +12,10 @@
     margin: 10px auto;
 }
 
+.insta-btn-link{
+    text-decoration: none;
+}
+
 .title-div{
     text-align: center;
 }
